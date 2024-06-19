@@ -1,7 +1,9 @@
 export default function AuthPage() {
     return (
-        <div>
-            <h1>Auth Page</h1>
+        <div className="flex">
+            <div className="flex w-1/2 h-max bg-gray-400">
+
+            </div>
         </div>
     );
 }
