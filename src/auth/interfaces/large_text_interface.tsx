@@ -1,0 +1,3 @@
+interface LargeTextInterface {
+    text: string;
+}

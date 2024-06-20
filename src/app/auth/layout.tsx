@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LegalX - The Legal Experience Platform",
@@ -14,14 +11,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className={` m-8 h-full`}>
+    <div className={`flex flex-col p-8 h-screen`}>
       <div className="flex items-center pb-8">
         <div className="w-12 h-12 bg-gray-500 rounded-full" />
         <p className="text-2xl font-bold ml-2">
           LegalX
         </p>
       </div>
-      {children}
+      <div className="flex flex-row h-full">
+        {children}
+      </div>
     </div>
   );
 }

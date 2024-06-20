@@ -1,0 +1,3 @@
+interface AuthButtonInterface {
+    text: string;
+}
